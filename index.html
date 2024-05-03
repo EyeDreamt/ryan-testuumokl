@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>AR.js A-Frame Location-based</title>
-<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
-<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
-<script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
-<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
-</head>
-<body>
-<a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
-    <a-camera gps-projected-camera='gpsMinDistance: 1'></a-camera>
-    <a-image src="assets/asset.jpeg" look-at="[camera]" gps-projected-entity-place="latitude: 38.900893; longitude: -90.920293" scale="10 10 10"></a-image>
-</a-scene>
-</body>
+  <head>
+    <title>AR.js A-Frame Location-based</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js"
+    ></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"
+    ></script>
+  </head>
+  <body>
+    <a-scene
+      vr-mode-ui="enabled: false"
+      arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
+      renderer="antialias: true; alpha: true"
+    >
+      <a-camera gps-projected-camera="gpsMinDistance: 1"></a-camera>
+      <a-image
+        src="assets/sign_default.png"
+        look-at="[camera]"
+        gps-projected-entity-place="latitude: 36.1430472; longitude: -115.1590264"
+        scale="10 10 10"
+      ></a-image>
+      <a-image
+        src="assets/sign_foodcourt.png"
+        look-at="[camera]"
+        gps-projected-entity-place="latitude: 36.1420113; longitude: -115.1650322"
+        scale="10 10 10"
+      ></a-image>
+      <a-image
+        src="assets/sign_mainentrance.png"
+        look-at="[camera]"
+        gps-projected-entity-place="latitude: 36.1397407; longitude: -115.1630954"
+        scale="10 10 10"
+      ></a-image>
+      <a-image
+        src="assets/sign_restrooms.png"
+        look-at="[camera]"
+        gps-projected-entity-place="latitude: 36.1408253; longitude: -115.1605407"
+        scale="10 10 10"
+      ></a-image>
+      <a-image
+        src="assets/sign_restrooms.png"
+        look-at="[camera]"
+        gps-projected-entity-place="latitude: 36.1432562; longitude: -115.1600036"
+        scale="10 10 10"
+      ></a-image>
+      <a-image
+        src="assets/sign_restrooms.png"
+        look-at="[camera]"
+        gps-projected-entity-place="latitude: 36.1429768; longitude: -115.1621997"
+        scale="10 10 10"
+      ></a-image>
+      <a-image
+        src="assets/sign_stages.png"
+        look-at="[camera]"
+        gps-projected-entity-place="latitude: 36.1431375; longitude: -115.1636709"
+        scale="10 10 10"
+      ></a-image>
+    </a-scene>
+  </body>
 </html>
