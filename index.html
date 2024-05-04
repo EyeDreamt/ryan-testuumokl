@@ -16,8 +16,8 @@
       AFRAME.registerComponent("slider", {
         init: function () {
           alert("attached");
-          var scaleSlider = document.querySelector("#scale");
-
+          var scaleSlider = document.getElementById("scale");
+          alert(scaleSlider.value);
           scaleSlider.addEventListener(
             "input",
             function () {
@@ -86,7 +86,7 @@
       ></a-image>
     </a-scene>
     <div style="position: absolute; bottom: 10px; margin: 0 auto">
-      <input type="range" id="scale" name="scale" min="0" max="50" />
+      <input type="range" id="scale" name="scale" min="0" max="50" value="10" />
       <label for="scale">Scale</label>
     </div>
   </body>
