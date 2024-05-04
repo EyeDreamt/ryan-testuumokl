@@ -15,6 +15,7 @@
     <script>
       AFRAME.registerComponent("slider", {
         init: function () {
+          alert("attached");
           var scaleSlider = document.querySelector("#scale");
 
           scaleSlider.addEventListener(
@@ -22,6 +23,7 @@
             function () {
               var els = sceneEl.querySelectorAll("a-image");
               var newScale = this.value;
+              alert(newScale);
               for (var i = 0; i < els.length; i++) {
                 els[i].object3D.scale.set(newScale, newScale, newScale);
               }
